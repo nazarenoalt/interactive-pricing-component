@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/mobile.css" media="screen and (min-width: 340px)">
+  <link rel="stylesheet" href="src/css/tablet.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="src/css/desktop.css" media="screen and (min-width: 1924px)">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h2>Simple, traffic-based pricing</h2>
+      <p class="header__description">
+        Sign-up for our 30-day trial. No credit card required. 
+      </p>
+  </header>
+
+  <main class="main">
+    
+    <div class="pageviews-box">
+      <p class="pageviews-amount">
+      <span class="pageview-number" id="pageview_number"></span>Pageviews
+      </p>
+      <p class="pageviews__price">
+        <span class="price-number" id="price_number"></span>$/month
+      </p>
+
+      <input type="range" class="pageviews-range" id="pageviews_range">
+
+      <div class="pageviews__billing-box content-box">
+        <span>Monthly Billing</span>
+            <div class="switch" id="switch">
+              <div class="ball-switch"></div>
+            </div>
+        <span>
+          Yearly Billing <span class="billing-box__discount">-25%</span>
+        </span>
+      </div>
+    </div>
+    
+    <div class="benefits-box content-box">
+      <ul>
+        <li>
+          Unlimited websites
+        </li>
+        <li>
+          100% data ownership
+        </li>
+        <li>
+          Email reports
+        </li>
+      </ul>
+    </div>
+
+    <button type="button" class="trial-button" id="trial_button">Start my trial</button>
+  </main>
+  
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+
+  <script src="src/js/index.js"></script>
+</body>
+</html>
