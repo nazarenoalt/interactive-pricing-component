@@ -26,8 +26,19 @@
 
 body {
     background: var(--very-pale-blue);
+    font-size: 15px;
 }
 
+p,
+li,
+span {
+  color: var(--grayish-blue);
+  cursor:default
+}
+
+h2 {
+  cursor:default
+}
 .header {
   
   display: flex;
@@ -36,23 +47,103 @@ body {
   text-align: center;
   height: 250px;
   color: var(--dark-desaturated-blue);
-  background-image: url("../../images/");
+  background-image: url("../../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
+.header__title {
+  line-height: 2.2;
+}
+
+.header__description {
+  margin: 0 20%;
+  color: var(--grayish-blue);
+  line-height: 1.6;
+  font-size: 15px;
+
+}
 .main {
   background: var(--white);
   width: 90%;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
+}
+
+.pageviews-amount {
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.pageviews__range {
+  margin: 30px 5%;
+  cursor: pointer;
+  border: none;
+}
+
+.pageviews__price {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.price-number {
+  color: var(--dark-desaturated-blue);
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.pageviews__billing-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 30px;
+
+}
+
+.switch {
+  display: flex;
+  height: 25px;
+  width: 50px;
+  margin: 0 10px;
+  background: var(--light-grayish-blue);
+  border-radius: 100px;
+  align-items: center;
+  padding: 6px;
+  cursor: pointer;
+
+}
+
+.switch__ball {
+  background: var(--white);
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  transition: all .2s;
+}
+
+.switch__ball.activated {
+  margin-left: 23px;
+}
+
+.billing-box__discount {
+  background: var(--light-grayish-red);
+  padding: 3px 7px;
+  border-radius: 20px;
+  color: var(--light-red);
 }
 
 .trial-button {
   border: none;
   background: var(--dark-desaturated-blue);
   border-radius: 100px;
-  padding: 10px 30px;
+  padding: 12px 40px;
   color: var(--light-grayish-blue);
+  margin: 30px auto 0;
+  cursor: pointer;
 }
 
 .content-box {
@@ -60,9 +151,35 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 30px 0;
+}
 
+.content-box:nth-child(2) {
+  border-top: 1px solid var(--very-pale-blue)
 }
 
 ul {
   list-style: none;
 }
+
+li {
+  line-height: 2;
+  font-size: 13px;
+
+}
+
+li:before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  color: green;
+  background-repeat: no-repeat;
+  background-image: url("../../images/icon-check.svg");
+}
+
+.footer {
+  margin: 30px 0;
+}
+

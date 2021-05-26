@@ -19,7 +19,7 @@
 <body>
 
   <header class="header">
-    <h2>Simple, traffic-based pricing</h2>
+    <h2 class="header__title">Simple, traffic-based pricing</h2>
       <p class="header__description">
         Sign-up for our 30-day trial. No credit card required. 
       </p>
@@ -27,20 +27,22 @@
 
   <main class="main">
     
-    <div class="pageviews-box">
+    <div class="pageviews-box content-box">
       <p class="pageviews-amount">
-      <span class="pageview-number" id="pageview_number"></span>Pageviews
+      <span class="pageview-number" id="pageview_number">100K</span> PAGEVIEWS
       </p>
+
+      <input type="range" class="pageviews__range" id="pageviews_range">
+
       <p class="pageviews__price">
-        <span class="price-number" id="price_number"></span>$/month
+        <span class="price-number" id="price_number">$16.00</span> / month
       </p>
 
-      <input type="range" class="pageviews-range" id="pageviews_range">
 
-      <div class="pageviews__billing-box content-box">
+      <div class="pageviews__billing-box ">
         <span>Monthly Billing</span>
             <div class="switch" id="switch">
-              <div class="ball-switch"></div>
+              <div class="switch__ball" id="switch_ball"></div>
             </div>
         <span>
           Yearly Billing <span class="billing-box__discount">-25%</span>
@@ -60,9 +62,10 @@
           Email reports
         </li>
       </ul>
+    <button type="button" class="trial-button" id="trial_button">Start my trial</button>
+
     </div>
 
-    <button type="button" class="trial-button" id="trial_button">Start my trial</button>
   </main>
   
   <footer class="footer">
@@ -72,6 +75,6 @@
     </div>
   </footer>
 
-  <script src="src/js/index.js"></script>
+  <script src="src/js/index.js" type="module"></script>
 </body>
 </html>
