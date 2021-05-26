@@ -1,0 +1,12 @@
+.benefits-box {
+  flex-direction: row;
+  justify-content: space-around
+}
+
+.trial-button {
+  margin: 15px 0;
+}
+
+.benefits-box li {
+  text-align: left;
+}
