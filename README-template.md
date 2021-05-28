@@ -18,8 +18,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Overview
-### The challenge
+## Overview### The challenge
 
 Users should be able to:
 
